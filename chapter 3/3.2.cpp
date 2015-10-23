@@ -1,3 +1,9 @@
+﻿/*
+ * 编写一个与3.12节中dup2功能相同的函数， 要求不调用fcntl函数，并且要有正确的出错处理。
+ * duplicate_dup2 函数原型与 dup2 一致
+ * 思路：
+ * 利用dup函数，不停的复制文件描述符，直到等于 fd2 为止
+ */
 #include <stdio.h>
 #include <unistd.h>
 #include <fcntl.h>
